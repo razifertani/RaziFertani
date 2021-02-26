@@ -1,8 +1,8 @@
 import 'package:RaziFertani/Core/Routes/routes.dart';
-import 'package:RaziFertani/Core/Utils/appColors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:RaziFertani/injection_container.dart' as sl;
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   sl.init();
@@ -20,8 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'RaziFertani',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Roboto',
-        primaryColor: AppColors.primaryColor,
+        fontFamily: GoogleFonts.lato().fontFamily,
       ),
       initialRoute: '/homeProvider',
       onGenerateRoute: RouteGenerator.generateRoute,
